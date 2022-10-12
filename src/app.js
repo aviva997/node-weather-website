@@ -6,8 +6,6 @@ const hbs = require('hbs')
 const geocode = require('./utils/geocode.js')
 const weather = require('./utils/weather.js')
 
-// console.log(__dirname)
-// console.log(path.join(__dirname,'../public')) // כדי להגיע לINDEX נבצע את זה
 
 const app = express()
 const port = process.env.PORT || 3000
@@ -35,14 +33,14 @@ app.get('',(req, res)=>{
 
 app.get('/about',(req, res)=>{
     res.render('about',{//Redirects to the page registered to it
-        title:'about ',
+        title:'About ',
         name : 'Aviva Malako'
     })
 })
 
 app.get('/help',(req, res)=>{
     res.render('help',{ //Redirects to the page registered to it
-        title:'help ',
+        title:'Help ',
         name: 'Aviva malako',
         some_text : 'if you need help u can tell me'
     })

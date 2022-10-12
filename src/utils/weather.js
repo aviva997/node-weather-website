@@ -11,7 +11,7 @@ const weather = (cord1,cord2, callback)=>{
             callback("Unable to find location",undefined)
 
         }else{
-            callback(undefined,body.current.weather_descriptions[0]+'. it is a currently '+body.current.temperature+' out. it feels ' +body.current.feelslike+' degrees out')
+            callback(undefined,body.current.weather_descriptions[0]+'. it is a currently '+body.current.temperature+' out. It feels ' +body.current.feelslike+' degrees out .')
 
         }
     })
