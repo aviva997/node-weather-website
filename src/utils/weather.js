@@ -12,7 +12,7 @@ const weather = (cord1,cord2, callback)=>{
             callback("Unable to find location",undefined)
 
         }else{
-            callback(undefined,'The temerature is -'+body.current.temperature+'. It feels like -'+body.current.feelslike+'. The humidity -'+ body.current.humidity)
+            callback(undefined,'The temerature is -'+body.current.temperature+' degress out. It feels like -'+body.current.feelslike+'. The humidity  is-'+ body.current.humidity)
         }
     })
 }
